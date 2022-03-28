@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://gianlied:Powerlol10@devconnector.nso5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://gianlied:Powerlol10@devconnector.nso5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
