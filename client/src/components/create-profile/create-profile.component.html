@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Iceland">
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+  <link rel="stylesheet" xlinkhref="assets/css/style.css" />
+  <link rel="stylesheet" xlinkhref="assets/css/create-profile.css" />
+  <title>Configuración de perfil</title>
+</head>
+
+<body>
+  <nav class="o-navbar navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/"><img src="assets/img/mascota0.png" width="100" height="55"
+          class="imgmascota" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="col-lg d-flex justify-content-end align-items-center">
+          <ul class="navbar-nav o-ul-normal">
+            <li class="nav-item"><a routerLink="/profiles">Equipos</a></li>
+            <li class="nav-item"><span>
+                <div class="circle-profile"></div>
+              </span></li>
+            <!-- start nav -->
+            <nav id="menu" class="nav-item">
+              <!-- start menu -->
+              <ul>
+                <li><a class="circle-profile" href="#"></a>
+                  <!-- start menu desplegable -->
+                  <ul>
+                    <li><a class="dropdown-item" routerLink="/myProfile">Perfil</a></li>
+                    <li><a class="dropdown-item" routerLink="/createProfile">Configuraciones</a></li>
+                    <li><a class="dropdown-item" routerLink="/login">Cerrar Sesión</a></li>
+                  </ul>
+                <li>
+                  <!-- end menu desplegable -->
+              </ul>
+              <!-- end menu -->
+            </nav>
+            <!-- end nav -->
+          </ul>
+          <ul class="navbar-nav o-ul-collapse ">
+            <li class="nav-item"><a routerLink="/profiles">Equipos</a></li>
+            <li class="nav-item"><span routerLink="/">Notificaciones</span></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Más opciones
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="dropdown-item"><a routerLink="/myProfile">Perfil</a></li>
+                <li class="dropdown-item"><a routerLink="/createProfile">Configuraciones</a></li>
+                <li class="dropdown-item"><a routerLink="/login">Cerrar Sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bannerconfig">
+    <a href="#"><img src="assets/img/cargarimagendeportada.svg" class="bannerimgconfig"></a>
+  </div>
+  <div class="box-config">
+    <button class="botonperfilimg"><img src="assets/img/agregaperfilimg.png" alt="">
+    </button>
+  </div>
+  <div class="profile-config row d-flex flex-wrap">
+    <div class="container-textprofile col">
+      <p class="p-config">Nickname</p>
+      <form action="/action_page" class="fieldsconfig">
+        <input type="text" placeholder="Nickname">
+      </form>
+      <p class="p-config">Nombre</p>
+      <form action="/action_page" class="fieldsconfig">
+        <input type="text" placeholder="Nombre">
+      </form>
+      <p class="p-config">Descripción</p>
+      <form action="/action_page" class="fieldsconfig">
+        <input type="text" placeholder="descripción">
+      </form>
+      <p class="p-config">Contacto</p>
+      <form action="/action_page" class="fieldsconfig">
+        <input type="email" placeholder="User@email.com">
+      </form>
+      <p class="p-config">Edad</p>
+      <form action="/action_page" class="fieldsconfig">
+        <input type="date">
+      </form>
+    </div>
+    <div class="container-smash col">
+      <button class="botonsmash ">
+        <img src="assets/img/Smashggicon.png" class="smashimg">
+        <p class="p-smash">Conectar con Smash.gg</p>
+      </button>
+    </div>
+  </div>
+  <div class="d-flex justify-content-end">
+    <button class="botonhecho">¡HECHO!</button>
+  </div>
+  

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" xlinkhref="assets/css/style.css" />
+    <title>Welcome To The Developer Connector</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+      <div class="container-fluid">
+        <h1>
+          <a routerLink="/"><i class="fas fa-code"></i> DevConnector</a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="col-lg d-flex justify-content-end align-items-center">
+            <ul class="navbar-nav">
+              <li class="nav-item o-li"><a routerLink="/myProfile">Perfil</a></li>
+              <li class="nav-item o-li"><a routerLink="/createProfile">Configuraciones</a></li>
+              <li class="nav-item o-li"><a routerLink="/login">Cerrar Sesión</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container">
+      <h1 class="large text-primary">Developers</h1>
+      <p class="lead">
+        <i class="fab fa-connectdevelop"></i> Browse and connect with developers
+      </p>
+      <div class="profiles row">
+        <div class="o-profile bg-light col">
+          <img
+            class="round-img"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+          <div>
+            <h2>John Doe</h2>
+            <p>Developer at Microsoft</p>
+            <p>Seattle, WA</p>
+            <a routerLink="/myProfile" class="btn btn-primary">View Profile</a>
+          </div>
+
+          <ul>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> HTML
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> CSS
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> JavaScript
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> Python
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> C#
+            </li>
+          </ul>
+        </div>
+
+        <div class="o-profile bg-light col">
+          <img
+            class="round-img"
+            src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+            alt=""
+          />
+          <div>
+            <h2>John Doe</h2>
+            <p>Developer at Microsoft</p>
+            <p>Seattle, WA</p>
+            <a routerLink="/myProfile" class="btn btn-primary">View Profile</a>
+          </div>
+
+          <ul>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> HTML
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> CSS
+            </li>
+            <li class="text-primary">
+              <i class="fas fa-check"></i> JavaScript
+            </li>
+          </ul>
+        </div>
+      </div>

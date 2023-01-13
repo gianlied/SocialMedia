@@ -24,34 +24,31 @@ const Login = () => {
 
   return (
   <Fragment>
-    <div className="logincontainer">
-      <img src={logoSVG} height="1080px"/>
-      <div className="containerlogin">
-        <div className="containerfields" style={{display: "flex"}}>
-          <form onSubmit={(e=> onSubmit(e))} className="form">
-          <div className='form-group'>
-                <p>Correo Electronico</p>
-            </div>
-            <div className='form-group'>
-              <input type="text" placeholder="Correo electronico" name='email' value={email} onChange={e => onChange(e)} required />
-            </div>
-            <div className='form-group'>
-                <p>Contraseña</p>
-            </div>
-            <div className='form-group'>
-            <input type="password" placeholder="contraseña" name='password' value={password} onChange={e => onChange(e)} required />
-            </div>
-            <input type='submit' className='btn btn-primary' value='Iniciar Sesion'/>
-            <div className="containerenlaces">
-            <Link to="#" className="textos-enlace">¿Olvidaste tu contraseña?</Link>
-            <Link to="/register" className="textos-enlace">Crear cuenta</Link>
-        </div>
-        </form>           
-        </div>
+    <div className='container-fluid logincontainer'>
+      <div className='img-login cold-md-5'>
+      <img className='o-img-masc' src={logoSVG}></img>
       </div>
+      <div className='containerlogin'>
+        <div className='container fields'>
+          <form action='/action_page' className='login-form'>
+          <label>Correo electronico</label>
+          <input className='o-input' type="text" placeholder='Correo electronico'/>
+          <label>contraseña</label>
+          <input className='o-input' type="text" placeholder='Contraseña'/>
+          <button className='botoniniciar'>Iniciar Sesion</button>
+          <hr size="2px" width="100%" color='black' />
+          <div className='containerenalces'>
+            <Link to="#" className="textos-enlace">¿Olvidaste tu contraseña?</Link>
+          </div>
+          <div className='containerenalces'>
+            <Link to="/register" className="textos-enlace">Crear cuenta</Link>
+          </div>  
+          </form>
+        </div>
+        <p>NOMBRE DE LA PAGINA </p>
+    </div>
     </div>
   </Fragment>
   )
 }
-
 export default Login
